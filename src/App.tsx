@@ -1,9 +1,6 @@
 import logo from './logo.svg';
-import ButtonComponent from './presetPage/ButtonComponent';
-
-
 import './App.css';
-import PresetPage from './presetPage/PresetPage';
+import PresetPage from './pages/presetPage/PresetPage';
 
 function App() {
   return (
