@@ -68,7 +68,8 @@ A focus timer built for ADHD users, focusing on task initiation, flexible attent
 ## What I Learned
 
 -  Typing props are important also. 
--  
+- Props are always object  
+-  useEffects are side effect when something is rendering (e.g. run this code when duration changes)
 -  
 
 ---
@@ -77,6 +78,7 @@ A focus timer built for ADHD users, focusing on task initiation, flexible attent
 
 -  <img width="1914" height="855" alt="image" src="https://github.com/user-attachments/assets/0a5be06a-f8f9-4e49-abcd-6492d34cd157" />
 
+- <img width="1917" height="865" alt="image" src="https://github.com/user-attachments/assets/61d8040c-7a5b-4103-9fbc-3eff672ebe08" />
 
 ---
 
