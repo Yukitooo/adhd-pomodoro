@@ -1,9 +1,4 @@
-import React from 'react'
+import { DurationProvider, DurationContext } from "./DurationContext";
+import { useDuration } from "./useDuration";
+export type {DurationContextValue} from './types'
 
-function index() {
-  return (
-    console.log('Hello world')
-  )
-}
-
-export default index
