@@ -1,12 +1,20 @@
-import React, {useContext} from 'react'
-import { DurationContext } from '../../contexts/duration/DurationContext'
+import React, { useContext, useEffect, useState } from "react"
+import { DurationContext } from "../../contexts/duration/DurationContext"
+import { formatMmss, startCountdown } from "./timerFormatter"
 
 function TimerComponent() {
+  const { duration } = useContext(DurationContext)
+  const [display, setDisplay] = useState(formatMmss(duration * 60))
 
-  const {duration} = useContext(DurationContext)
-  
+  useEffect(() => {
+    const stop = startCountdown(duration, (mmss) => setDisplay(mmss))
+    return stop
+  }, [duration])
+
   return (
-    <div>{duration}</div>
+    <div className="min-h-screen flex justify-center items-center text-7xl">
+      {display}
+    </div>
   )
 }
 
